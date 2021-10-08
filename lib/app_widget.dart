@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learning/src/modules/currency/currency_page.dart';
 
 import 'app_controller.dart';
-import 'home_page.dart';
-import 'login_page.dart';
+import 'src/modules/home/home_page.dart';
+import 'src/modules/login/login_page.dart';
 
 class AppWidget extends StatelessWidget {
   final String title;
@@ -27,6 +28,7 @@ class AppWidget extends StatelessWidget {
               routes: {
                 '/': (context) => LoginPage(),
                 '/home': (context) => HomePage(),
+                '/currency': (context) => CurrencyPage(),
               });
         },
       ),

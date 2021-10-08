@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'app_controller.dart';
+import '../../../app_controller.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -34,6 +34,14 @@ class HomePageState extends State<HomePage> {
               subtitle: Text('tela de inicio'),
               onTap: () {
                 print('home');
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text('Conversor'),
+              subtitle: Text('Conversor de moeda'),
+              onTap: () {
+                Navigator.of(context).pushNamed('/currency');
               },
             ),
             ListTile(
