@@ -46,6 +46,14 @@ class HomePageState extends State<HomePage> {
             ),
             ListTile(
               leading: Icon(Icons.home),
+              title: Text('Todo'),
+              subtitle: Text('Lista de Todos'),
+              onTap: () {
+                Navigator.of(context).pushNamed('/todo');
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
               title: Text('Sair'),
               subtitle: Text('Sair do app'),
               onTap: () {

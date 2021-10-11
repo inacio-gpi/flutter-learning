@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learning/src/modules/currency/currency_page.dart';
+import 'package:flutter_learning/src/modules/todo/todo_page.dart';
 
 import 'app_controller.dart';
 import 'src/modules/home/home_page.dart';
@@ -29,10 +30,10 @@ class AppWidget extends StatelessWidget {
                 '/': (context) => LoginPage(),
                 '/home': (context) => HomePage(),
                 '/currency': (context) => CurrencyPage(),
+                '/todo': (context) => TodoPage(),
               });
         },
       ),
-      // HomePage(),
     );
   }
 }
